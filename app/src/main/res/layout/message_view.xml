@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/sz10dp"
+    android:paddingBottom="@dimen/sz10dp"
+    android:paddingRight="@dimen/sz20dp"
+    android:paddingLeft="@dimen/sz15dp"
+
+
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgvUser"
+        android:layout_width="@dimen/sz48dp"
+        android:layout_height="@dimen/sz48dp"
+        android:layout_marginRight="@dimen/sz15dp"
+        android:layout_marginTop="@dimen/sz25dp"
+
+
+        android:src="@drawable/btn_viewuser" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtvUser"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="@string/username"
+        android:layout_marginBottom="@dimen/sz5dp"
+        android:layout_toEndOf="@+id/imgvUser"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_below="@id/txtvUser"
+        android:id="@+id/txtvContent"
+        android:background="@drawable/btn_regis"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sz20sp"
+        android:layout_toEndOf="@id/imgvUser"
+        android:maxWidth="290dp"
+        android:minWidth="100dp"
+        android:paddingTop="@dimen/sz10dp"
+        android:paddingBottom="@dimen/sz10dp"
+        android:paddingLeft="@dimen/sz15dp"
+        android:paddingRight="@dimen/sz15dp"
+        android:text="alouhgsdgfbsdguouygyuuyfu"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>

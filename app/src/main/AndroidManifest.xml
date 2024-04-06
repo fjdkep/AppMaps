@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Cafe4u"
+        tools:targetApi="31">
+        <activity
+            android:name=".community_chat"
+            android:exported="false" />
+
+        <activity
+            android:name=".SearchList.kqua_search"
+            android:exported="false" />
+
+        <activity
+            android:name=".home2"
+            android:exported="false" />
+        <activity
+            android:name=".tai_khoan"
+            android:exported="false" />
+
+        <activity
+            android:name=".chitiet_quan"
+            android:exported="false" />
+
+        <activity
+            android:name=".goi_y"
+            android:exported="false" />
+        <activity
+            android:name=".doi_mat_khau"
+            android:exported="false" />
+        <activity
+            android:name=".home1"
+            android:exported="false" />
+        <activity
+            android:name=".favouriteList.ds_yeuthich"
+            android:exported="false" />
+        <activity
+            android:name=".dang_ky"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCr61hM4OE0MY5jV2j9kZorHjTfq3N3QNA" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:exported="true" />
+
+        <activity
+            android:name=".dang_nhap"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
